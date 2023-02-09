@@ -8,6 +8,12 @@ body {
     font-size: 18px;
 }
 
+h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+   
+}
+
 h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 28px;
@@ -15,40 +21,64 @@ h2 {
 
 .container {
     min-width: 640px;
-    margin: 0 auto;
+    display: block;
+    
 }
 
 
+
+
 /* Mobile */
-#column-1 {
+
+
+
+#box-1 {
     background-color: pink;
     height: 300px;
 }
 
-#column-2 {
+#box-2 {
     background-color: red;
     height: 300px;
 }
 
+#box-3 {
+    background-color: grey;
+    height: 300px;
+    display: none;
+}
+
+#box-4 {
+    background-color: brown;
+    height: 300px;
+    display: none;
+}
 
 
 
 /* media query for larger screens */
-@media screen and (min-width:641px) {
-    #column-1 {
+@media only screen and (min-width:641px) {
+    #box-1 {
+        background-color: blue;
         width:25%;
-        
+        display: inline-block;
     }
-    #column-2 {
+    #box-2 {
+        background-color: purple;
         width:25%;
-        
+        display: inline-block;
     }
-    #column-3 {
+    #box-3 {
         width:25%;
-        
+        display: inline-block;
     }
-    #column-4 {
+    #box-4 {
         width:25%;
-        
+        display: inline-block;
     }
+    #column-con {
+        display: flex;
+        flex-direction: row;
+    }
+
 }
